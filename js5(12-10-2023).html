@@ -1,0 +1,80 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            document.write("printing stars in increasing order using for loops:","<br>");
+            var n=("* ");
+            for(i=0;i<=5;i++){
+  for(j=0;j<=i;j++){
+  document.write(n);
+}
+document.write('<br>');
+}
+document.write("<br>");
+document.write("printing stars in decreasin order by using for loops:","<br>");
+var n="* ";
+for(i=5;i>=0;i--){
+  for(j=0;j<=i;j++){
+  document.write(n);
+}
+document.write('<br>');
+}
+document.write("<br>");
+document.write("printing numbers by using for loops:","<br>");
+for(i=1;i<=10;i++){
+  for(j=1;j<=i;j++){
+    document.write(j);
+
+  }
+  document.write(" <br> ");
+
+}
+document.write("<br>");
+document.write("printing numbers  by using for loops:","<br>");
+for(i=10;i>=1;i--){
+  for(j=1;j<=i;j++){
+    document.write(j);
+
+  }
+  document.write("<br>");
+
+}document.write("palindrome or not by using for loop: <br><br>")
+var a="rohith";
+  var b="";
+  for(i=a.length-1;i>=0;i--){
+      b+=a[i];
+  }
+  if(a==b){
+    document.write("it is a palindrome");
+  }
+  else{
+    document.write("rohith"+" is not a palindrome");
+  }
+  document.write("<br><br>");
+  
+  
+document.write("palindrone or not by using functions: <br><br>");
+var palindrome= function(a){
+    var b="";
+    for(i=a.length-1;i>=0;i--){
+        b+=a[i];
+    }
+    if(a==b){
+        document.write(a + " is a palindrome"+"<br><br>");
+    }
+    else{
+        document.write(a + " is not a palindrome"+"<br><br>");
+    }
+  }
+  palindrome("nitin");
+  palindrome("mom");
+  palindrome("fronted");
+        </script>
+        
+    </body>
+    </html>
